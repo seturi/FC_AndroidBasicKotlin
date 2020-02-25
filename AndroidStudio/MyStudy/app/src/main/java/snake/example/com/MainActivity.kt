@@ -3,10 +3,10 @@ package snake.example.com
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import kotlinx.android.synthetic.main.activity_main.*
-import snake.example.com.Step1.AnyTest
-import snake.example.com.Step1.FirstTest
-import snake.example.com.Step1.NumberTest
-import snake.example.com.Step1.StringTest
+import snake.example.com.Step1.*
+import snake.example.com.Step2.ClassTest
+import snake.example.com.Step2.PolymorphTest
+import java.lang.Exception
 
 class MainActivity : AppCompatActivity() {
 
@@ -18,8 +18,16 @@ class MainActivity : AppCompatActivity() {
 //        doTest(FirstTest(::Writeln))
 //        doTest(NumberTest(::Writeln))
 //        doTest(StringTest(::Writeln))
-        doTest(AnyTest(::Writeln))
+//        doTest(AnyTest(::Writeln))
+//        doTest(FunctionTest(::Writeln))
+//        doTest(ConditionTest(::Writeln))
+//        doTest(LabelTest(::Writeln))
+//        doTest(CollectionTest(::Writeln))
+//        doTest(ExceptionTest(::Writeln))
+//        doTest(ClassTest(::Writeln))
+        doTest(PolymorphTest(::Writeln))
     }
+
 
     private fun doTest(o : TestClass){
         o.doTest()
