@@ -5,8 +5,7 @@ import android.os.Bundle
 import kotlinx.android.synthetic.main.activity_main.*
 import snake.example.com.Step1.*
 import snake.example.com.Step2.*
-import snake.example.com.Step3.ExtFunctionTest
-import snake.example.com.Step3.LambdaTest
+import snake.example.com.Step3.*
 import java.lang.Exception
 
 class MainActivity : AppCompatActivity() {
@@ -32,7 +31,13 @@ class MainActivity : AppCompatActivity() {
 //        doTest(DataClassTest(::Writeln))
 //        doTest(ObjectTest(::Writeln))
 //        doTest(LambdaTest(::Writeln))
-        doTest(ExtFunctionTest(::Writeln))
+//        doTest(ExtFunctionTest(::Writeln))
+//        doTest(ClosureTest(::Writeln))
+//        doTest(Ext2Test(::Writeln))
+//        doTest(DSLTest(::Writeln))
+//        doTest(CurryingTest(::Writeln))
+//        doTest(InfixTest(::Writeln))
+        doTest(DestructuringTest(::Writeln))
     }
 
 
