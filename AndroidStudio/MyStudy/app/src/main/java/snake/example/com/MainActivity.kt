@@ -1,11 +1,14 @@
 package snake.example.com
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import kotlinx.android.synthetic.main.activity_main.*
 import snake.example.com.Step1.*
 import snake.example.com.Step2.*
 import snake.example.com.Step3.*
+import snake.example.com.javaInterlop.javaActivity
+import snake.example.com.using_kotlin.setClickHandler
 import java.lang.Exception
 
 class MainActivity : AppCompatActivity() {
@@ -36,8 +39,16 @@ class MainActivity : AppCompatActivity() {
 //        doTest(Ext2Test(::Writeln))
 //        doTest(DSLTest(::Writeln))
 //        doTest(CurryingTest(::Writeln))
+
 //        doTest(InfixTest(::Writeln))
-        doTest(DestructuringTest(::Writeln))
+//        doTest(DestructuringTest(::Writeln))
+//        doTest(LazyLateTest(::Writeln))
+//        doTest(PropertiesTest(::Writeln))
+//        setClickHandler()
+        btnTest.setOnClickListener {
+            var I = Intent(this, javaActivity::class.java)
+            startActivity(I)
+        }
     }
 
 
